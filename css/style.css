@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.tag {
+    padding: 0;
+    margin: 0;
+}
+
+ marquee  {
+    font-size: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.main_bg_div {
+    width: 100%;
+    margin-top: -10px;
+    height: 150vh;
+    background-image: url(../images/stadium-new2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main_bg_div .logo_div {
+    width: 150px;
+    height: 150px;
+}
+
+.main_bg_div .center_div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_bg_div .logo_div {
+    margin: 1rem 0;
+}
+
+.main_bg_div .logo_div img {
+    width: 100%;
+    height: auto;
+}
+
+.main_bg_div .form_group_div {
+    width: 70%;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.main_bg_div .form_group_div .auth_form {
+    width: 40%;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.546);
+    border: 2px solid #f36c21;
+    border-radius: 5px;
+}
+
+.form_group_div .form_group_inner  {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form_group_div .form_group_inner input {
+    margin-left: .9rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    padding: .4rem 0;
+    color: #fff;
+}
+
+.form_group_div .form_group_inner i {
+    color: #fff;
+    font-size: 12px;
+}
+
+.space_div {
+    width: 10%;
+    padding: 0 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.space_div .line {
+    margin-left: .7rem;
+    height: 40%;
+    width: 1px;
+    background-color: #000;
+}
+
+.space_div .text_div {
+    padding: 1rem 0;
+}
+
+
+.whats_app_form {
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+text-align: center;
+    }
+
+    .whats_app_form p {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .whats_app_form img {
+        width: auto;
+        height: 50px;
+        margin: 1rem;
+        cursor: pointer;
+        animation: blink 1.4s ease infinite;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: .2;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .checkBox_div label {
+        color: #fff;
+        font-size: 8px;
+        line-height: normal;
+    }
+
+    .register {
+        width: 100%;
+        padding: .5rem;
+        border-radius: 30px;
+        margin-top: 1rem;
+        font-size: 10px;
+        border: none;
+        background-color: #4caf50 !important;
+        color: #fff;
+    }
+
+    .active {
+        background-color: #4caf50 !important;
+    }
+
+    .second_form {
+        display: none;
+    }
+
+    .space_div_ne {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 1rem;
+        display: none;
+    }
+
+    .space_div_ne .line_div {
+        width: 40%;
+        border: 1px solid #000;
+    }
+
+    .space_div_ne .sp {
+        padding: 0 1rem;
+    }
+
+    .space_div_ne p {
+        color: #fff;
+
+    }
+
+    @media (max-width: 900px) {
+        .main_bg_div .form_group_div  {
+            width: 100%;
+        }   
+    }
+
+    @media (max-width: 600px) {
+        .main_bg_div .form_group_div {
+            display: block;
+        }
+        .main_bg_div .form_group_div .auth_form {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+        .second_form {
+            display: block;
+        }
+        .wh {
+            display: none;
+        }
+        .space_div .text_div {
+            display: none;
+        }
+        .space_div_ne {
+            display: flex;
+        }
+        .whats_app_form p {
+            font-size: 13px;
+        }
+    }
